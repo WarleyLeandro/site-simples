@@ -1,3 +1,24 @@
-h1 {
-  color: #b22222;
+.navbar {
+  background-color: #363636;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-item {
+  margin: 0 10px;
+  padding: 10px 20px;
+  color: #fbfbfb;
+  text-decoration: none;
+}
+
+.navbar-item.active {
+  background-color: #696969;
+  border-radius: 4px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
