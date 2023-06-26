@@ -18,9 +18,84 @@
   border-radius: 4px;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    font-size: 24px;
+    color: #fbfbfb;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #363636;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .menu a {
+    margin-bottom: 10px;
+    color: #fbfbfb;
+    text-decoration: none;
+  }
+
+  .menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+  .content {
+    width: 80%;
+  }
+  .img-box img {
+    width: 98%;
+    align-self: center;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .menu {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu a {
+    margin: 0 10px;
+  }
+}
+
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -34,4 +109,21 @@
 
 .contato ul li {
   margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.content {
+  width: 60%;
+  align-self: center;
+  padding: 10px;
+}
+.img-box {
+  width: 60%;
+  align-self: center;
+  padding: 10px;
+}
+
+.title {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
