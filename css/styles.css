@@ -1,5 +1,12 @@
+section {
+  margin-top: 60px;
+}
+footer {
+  margin-top: 60px;
+}
+
 .navbar {
-  background-color: #363636;
+  margin-top: 20px;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -7,6 +14,7 @@
 }
 
 .navbar-item {
+  display: flex;
   margin: 0 10px;
   padding: 10px 20px;
   color: #fbfbfb;
@@ -59,8 +67,8 @@
   .content {
     width: 80%;
   }
+
   .img-box img {
-    width: 90%;
     align-self: center;
     padding: 10px;
   }
@@ -125,9 +133,25 @@
   padding: 10px;
 }
 .img-box {
-  width: 60%;
-  align-self: center;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
+}
+.img-box img {
+  width: 40%;
+}
+
+.img-sobre {
+  width: 100%;
+  align-self: center;
+}
+.img-banner {
+  display: flex;
+
+  justify-content: center;
 }
 
 .title {
@@ -146,4 +170,8 @@
 
 .fa-check {
   color: #dc143c;
+}
+
+#logo-site {
+  height: 60px;
 }
