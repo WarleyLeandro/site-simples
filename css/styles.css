@@ -60,9 +60,16 @@
     width: 80%;
   }
   .img-box img {
-    width: 98%;
+    width: 90%;
     align-self: center;
     padding: 10px;
+  }
+  #list-service {
+    display: flex;
+    flex-direction: column;
+  }
+  .list {
+    width: 96%;
   }
 }
 
@@ -126,4 +133,17 @@
 .title {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.no-bullets li:hover {
+  font-size: 20px;
+  color: #dc143c;
+}
+
+.fa-check {
+  color: #dc143c;
 }
